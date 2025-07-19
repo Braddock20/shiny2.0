@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: youtube-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: YT_API_KEY
+        value: AIzaSyAlRS5xs6RcGSvOIDztVRX0g2EjQXvCaN0
